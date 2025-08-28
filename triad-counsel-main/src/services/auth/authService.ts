@@ -55,7 +55,7 @@ export interface SetNewPasswordRequest {
 }
 
 class AuthService {
-  private readonly baseUrl = 'http://localhost:8000/api/auth';
+  private readonly baseUrl = 'https://python-back-end.onrender.com/api/auth';
 
   async login(credentials: LoginRequest): Promise<LoginResponse> {
     try {

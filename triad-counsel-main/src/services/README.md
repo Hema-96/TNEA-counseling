@@ -34,7 +34,7 @@ import { authService, adminService, collegeService, studentService } from '../se
 
 The `apiClient.ts` provides a configured axios instance with:
 
-- **Base URL**: `http://localhost:8000/api/v1`
+- **Base URL**: `https://python-back-end.onrender.com/api/v1`
 - **Request Interceptor**: Automatically adds Bearer token to all requests
 - **Response Interceptor**: Handles 401 errors by refreshing tokens automatically
 
