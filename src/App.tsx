@@ -120,44 +120,6 @@ const App = () => (
               </ProtectedRoute>
             } />
             
-            {/* Admin Program Management Routes */}
-            <Route path="/admin/programs" element={
-              <ProtectedRoute requiredRole={1}>
-                <AdminPlaceholder 
-                  title="Program Management" 
-                  description="Manage all programs in the system"
-                  icon={FileText}
-                />
-              </ProtectedRoute>
-            } />
-            <Route path="/admin/programs/all" element={
-              <ProtectedRoute requiredRole={1}>
-                <AdminPlaceholder 
-                  title="All Programs" 
-                  description="View and manage all programs"
-                  icon={FileText}
-                />
-              </ProtectedRoute>
-            } />
-            <Route path="/admin/programs/pending" element={
-              <ProtectedRoute requiredRole={1}>
-                <AdminPlaceholder 
-                  title="Pending Approvals" 
-                  description="Review and approve pending programs"
-                  icon={UserCheck}
-                />
-              </ProtectedRoute>
-            } />
-            <Route path="/admin/programs/approved" element={
-              <ProtectedRoute requiredRole={1}>
-                <AdminPlaceholder 
-                  title="Approved Programs" 
-                  description="View all approved programs"
-                  icon={CheckCircle}
-                />
-              </ProtectedRoute>
-            } />
-            
             {/* Admin Reports Routes */}
             <Route path="/admin/reports" element={
               <ProtectedRoute requiredRole={1}>

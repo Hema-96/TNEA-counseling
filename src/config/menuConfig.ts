@@ -38,32 +38,6 @@ export const menuConfig: MenuConfig = {
       icon: 'Shield'
     },
     {
-      id: 'programs',
-      title: 'Program Management',
-      path: '/admin/programs',
-      icon: 'FileText',
-      children: [
-        {
-          id: 'all-programs',
-          title: 'All Programs',
-          path: '/admin/programs/all',
-          icon: 'FileText'
-        },
-        {
-          id: 'pending-approvals',
-          title: 'Pending Approvals',
-          path: '/admin/programs/pending',
-          icon: 'UserCheck'
-        },
-        {
-          id: 'approved-programs',
-          title: 'Approved Programs',
-          path: '/admin/programs/approved',
-          icon: 'CheckCircle'
-        }
-      ]
-    },
-    {
       id: 'reports',
       title: 'Reports & Analytics',
       path: '/admin/reports',
@@ -130,32 +104,6 @@ export const menuConfig: MenuConfig = {
       title: 'Dashboard',
       path: '/college/dashboard',
       icon: 'Home'
-    },
-    {
-      id: 'programs',
-      title: 'Program Management',
-      path: '/college/programs',
-      icon: 'FileText',
-      children: [
-        {
-          id: 'my-programs',
-          title: 'My Programs',
-          path: '/college/programs/my',
-          icon: 'FileText'
-        },
-        {
-          id: 'create-program',
-          title: 'Create Program',
-          path: '/college/programs/create',
-          icon: 'FileText'
-        },
-        {
-          id: 'pending-approvals',
-          title: 'Pending Approvals',
-          path: '/college/programs/pending',
-          icon: 'UserCheck'
-        }
-      ]
     },
     {
       id: 'students',
