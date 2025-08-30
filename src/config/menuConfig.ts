@@ -42,24 +42,6 @@ export const menuConfig: MenuConfig = {
       title: 'Reports & Analytics',
       path: '/admin/reports',
       icon: 'BarChart3',
-    },
-    {
-      id: 'stages',
-      title: 'Stage Management',
-      path: '/admin/stages',
-      icon: 'Clock'
-    },
-    {
-      id: 'notifications',
-      title: 'Notifications',
-      path: '/admin/notifications',
-      icon: 'Bell'
-    },
-    {
-      id: 'settings',
-      title: 'Settings',
-      path: '/admin/settings',
-      icon: 'Settings'
     }
   ],
 
