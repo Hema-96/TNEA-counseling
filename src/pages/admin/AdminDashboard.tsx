@@ -291,37 +291,6 @@ const AdminDashboard: React.FC = () => {
             />
           </CardContent>
         </Card>
-
-        <Card className="col-span-3">
-          <CardHeader>
-            <CardTitle>Recent Activity</CardTitle>
-            <CardDescription>
-              Latest platform activities
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              {recentActivities.map((activity) => (
-                <div key={activity.id} className="flex items-start space-x-3">
-                  <div className="mt-1">
-                    {getStatusIcon(activity.status)}
-                  </div>
-                  <div className="flex-1 space-y-1">
-                    <p className="text-sm font-medium leading-none">
-                      {activity.message}
-                    </p>
-                    <div className="flex items-center justify-between">
-                      <p className="text-xs text-muted-foreground">
-                        {activity.time}
-                      </p>
-                      {getStatusBadge(activity.status)}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
       </div>
     </div>
   );

@@ -30,18 +30,6 @@ export const menuConfig: MenuConfig = {
       title: 'Students',
       path: '/admin/students',
       icon: 'GraduationCap'
-    },
-    {
-      id: 'administrators',
-      title: 'Administrators',
-      path: '/admin/admins',
-      icon: 'Shield'
-    },
-    {
-      id: 'reports',
-      title: 'Reports & Analytics',
-      path: '/admin/reports',
-      icon: 'BarChart3',
     }
   ],
 
