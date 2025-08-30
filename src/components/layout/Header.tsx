@@ -36,15 +36,7 @@ export const Header: React.FC<HeaderProps> = ({ title, role }) => {
             )}
           </div>
           
-          <div className="flex items-center space-x-4">
-            <Button
-              variant={bypassAuth ? "warning" : "outline"}
-              size="sm"
-              onClick={toggleBypass}
-            >
-              Auth: {bypassAuth ? "Bypassed" : "Active"}
-            </Button>
-            
+          <div className="flex items-center space-x-4">            
             {user && (
               <div className="flex items-center space-x-3">
                 <span className="text-sm text-muted-foreground">

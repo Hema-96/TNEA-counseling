@@ -4,7 +4,7 @@ import { authService } from './auth/authService';
 // Create axios instance
 const apiClient: AxiosInstance = axios.create({
   baseURL: 'https://python-back-end.onrender.com/api',
-  timeout: 10000,
+  timeout: 100000000,
   headers: {
     'Content-Type': 'application/json',
   },

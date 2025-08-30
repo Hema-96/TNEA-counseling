@@ -8,22 +8,16 @@ const Landing: React.FC = () => {
     {
       title: 'Admin Portal',
       description: 'Manage users, system settings, and oversee all counseling services.',
-      href: '/login',
-      variant: 'admin' as const,
       features: ['User Management', 'System Analytics', 'Configuration', 'Reports']
     },
     {
       title: 'Student Portal',
       description: 'Access counseling services, book appointments, and manage your profile.',
-      href: '/login',
-      variant: 'student' as const,
       features: ['Book Appointments', 'Profile Management', 'Counseling History', 'Resources']
     },
     {
       title: 'College Portal',
       description: 'Manage programs, view applications, and coordinate counseling services.',
-      href: '/login',
-      variant: 'college' as const,
       features: ['Program Management', 'Student Applications', 'Counselor Assignment', 'Analytics']
     }
   ];
@@ -43,11 +37,8 @@ const Landing: React.FC = () => {
             Access mental health support, academic guidance, and career counseling all in one place.
           </p>
           <div className="flex justify-center space-x-4">
-            <Button variant="hero" size="xl">
-              Get Started
-            </Button>
-            <Button variant="outline" size="xl">
-              Learn More
+            <Button variant="hero" size="xl" asChild>
+              <a href="/login">Login</a>
             </Button>
           </div>
         </div>
@@ -60,7 +51,7 @@ const Landing: React.FC = () => {
                 <h3 className="text-2xl font-bold text-foreground mb-3">{role.title}</h3>
                 <p className="text-muted-foreground mb-6">{role.description}</p>
                 
-                <div className="space-y-2 mb-6">
+                <div className="space-y-2">
                   {role.features.map((feature) => (
                     <div key={feature} className="flex items-center justify-center text-sm text-muted-foreground">
                       <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
@@ -68,15 +59,6 @@ const Landing: React.FC = () => {
                     </div>
                   ))}
                 </div>
-                
-                <Button
-                  variant={role.variant}
-                  size="lg"
-                  className="w-full"
-                  asChild
-                >
-                  <a href={role.href}>Login to {role.title}</a>
-                </Button>
               </div>
             </Card>
           ))}
@@ -124,3 +106,4 @@ const Landing: React.FC = () => {
 };
 
 export default Landing;
+ 
