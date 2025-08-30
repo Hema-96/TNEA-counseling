@@ -323,35 +323,6 @@ const AdminDashboard: React.FC = () => {
           </CardContent>
         </Card>
       </div>
-      {/* Quick Actions */}
-      <Card>
-        <CardHeader>
-          <CardTitle>Quick Actions</CardTitle>
-          <CardDescription>
-            Common administrative tasks
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-            <Button variant="outline" className="h-auto p-4 flex flex-col items-center gap-2">
-              <Users className="h-6 w-6" />
-              <span>Manage Users</span>
-            </Button>
-            <Button variant="outline" className="h-auto p-4 flex flex-col items-center gap-2">
-              <FileText className="h-6 w-6" />
-              <span>Review Programs</span>
-            </Button>
-            <Button variant="outline" className="h-auto p-4 flex flex-col items-center gap-2">
-              <BarChart3 className="h-6 w-6" />
-              <span>View Reports</span>
-            </Button>
-            <Button variant="outline" className="h-auto p-4 flex flex-col items-center gap-2">
-              <Settings className="h-6 w-6" />
-              <span>System Settings</span>
-            </Button>
-          </div>
-        </CardContent>
-      </Card>
     </div>
   );
 };
