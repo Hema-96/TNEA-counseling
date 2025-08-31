@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
@@ -54,10 +54,12 @@ const iconMap: { [key: string]: React.ComponentType<any> } = {
 export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onToggle, menuItems }) => {
   const location = useLocation();
   const { logout, user } = useAuth();
+  const navigate = useNavigate();
 
   const handleLogout = async () => {
     try {
       await logout();
+      navigate('/login', { replace: true });
     } catch (error) {
       console.error('Logout error:', error);
     }
