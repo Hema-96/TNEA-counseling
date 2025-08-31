@@ -364,7 +364,7 @@ class StudentService {
     const signature: File | null = registration?.declaration?.signatureFile || null;
     if (signature) formData.append('signature', signature);
 
-    const response = await apiClient.post(`/v1/students/submit`, formData, {
+    const response = await apiClient.post(`/students/submit`, formData, {
       headers: { 'Content-Type': 'multipart/form-data' },
     });
     return response.data;
